@@ -4,6 +4,7 @@ description: >-
   Everything that I know related to DevOps
 baseurl: "" 
 url: ""
+author: Gino Latorilla
 github_username: ginolatorilla
 
 theme: minima
