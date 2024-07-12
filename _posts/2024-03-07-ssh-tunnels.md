@@ -30,4 +30,4 @@ This method also works with any TCP server.
 
 ## References
 
-- <https://linuxize.com/post/how-to-setup-ssh-tunneling/>
+- <https://linuxize.com/post/how-to-setup-ssh-tunneling/>{:target="_blank"}{:rel="noopener noreferrer"}

@@ -67,14 +67,13 @@ The final `exit` command here will use the one by the `terraform` command. The `
 will make GitLab treat that error code as successful and paint the job yellow in the pipeline. It gives you
 a simple indicator that the `terraform` job will propose changes, which scales well if there are more jobs.
 
-You can see this in action with `grep` in this [GitLab CI job](https://gitlab.com/ginolatorilla/gitlab-ci-recipes/-/jobs/7166047999).
+You can see this in action with `grep` in this [GitLab CI job](https://gitlab.com/ginolatorilla/gitlab-ci-recipes/-/jobs/7166047999){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Jobs that are allowed to fail will look like this:
 
 ![GitLab CI failed job with `allow_failure`]({{ "/assets/img/ci-job-with-allow-failure.png" | absolute_url }})
 
-
 ## References
 
-- <https://docs.gitlab.com/ee/ci/yaml/script.html#ignore-non-zero-exit-codes>
-- <https://docs.gitlab.com/ee/ci/yaml/#allow_failureexit_codes>
+- <https://docs.gitlab.com/ee/ci/yaml/script.html#ignore-non-zero-exit-codes>{:target="_blank"}{:rel="noopener noreferrer"}
+- <https://docs.gitlab.com/ee/ci/yaml/#allow_failureexit_codes>{:target="_blank"}{:rel="noopener noreferrer"}

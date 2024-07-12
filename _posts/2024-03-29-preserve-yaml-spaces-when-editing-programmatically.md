@@ -6,7 +6,7 @@ tags: yaml scripting
 
 When you are editing YAML files as part of some automation (e.g., a Python script that parses and edits some keys),
 there is a high chance that the whitespaces may be lost. These spaces do not have any functional impact as far as
-machines are concerned, but they may have value for humans. According to its [official specification](https://yaml.org),
+machines are concerned, but they may have value for humans. According to its [official specification](https://yaml.org){:target="_blank"}{:rel="noopener noreferrer"},
 YAML is a "human-friendly" language; spaces are an excellent tool for readability if used correctly.
 
 ## Problem

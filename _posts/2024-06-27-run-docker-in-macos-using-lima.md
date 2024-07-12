@@ -4,10 +4,10 @@ title: Run Docker in macOS Using Lima
 tags: docker macos lima
 ---
 
-[Docker Desktop](https://www.docker.com/products/docker-desktop/) is arguably the most popular tool for installing
-Docker in macOS. If you cannot use it due to technical constraints, other alternatives exist,
-like [Rancher Desktop](https://docs.rancherdesktop.io). If you want an automation-friendly solution, you can use
-[Lima](https://lima-vm.io).
+[Docker Desktop](https://www.docker.com/products/docker-desktop/){:target="_blank"}{:rel="noopener noreferrer"}
+is arguably the most popular tool for installing Docker in macOS. If you cannot use it due to technical constraints,
+other alternatives exist, like [Rancher Desktop](https://docs.rancherdesktop.io){:target="_blank"}{:rel="noopener noreferrer"}.
+If you want an automation-friendly solution, you can use [Lima](https://lima-vm.io){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Lima is a tool that can run virtual machines and is the same (if not inspired) tech behind Rancher Desktop.
 MacOS doesn't support native container runtimes, so it needs Docker to run inside Linux in virtual machines.
@@ -23,12 +23,13 @@ You also need to install the Docker CLI and a credential helper for the macOS ke
 brew install docker docker-credential-helper
 ```
 
-Their documentation provides an [example](https://lima-vm.io/docs/examples/#running-containers) of how to set up Docker.
+Their documentation provides an [example](https://lima-vm.io/docs/examples/#running-containers){:target="_blank"}{:rel="noopener noreferrer"}
+of how to set up Docker.
 
-Here is my set-up, which has the following features:
+Here is my setup, which has the following features:
 
-- VM will use [native virtualisation](https://developer.apple.com/documentation/virtualization), which runs with
-  an ARM CPU architecture, but it can use Rosetta for AMD binaries with a minor performance penalty.
+- VM will use [native virtualisation](https://developer.apple.com/documentation/virtualization){:target="_blank"}{:rel="noopener noreferrer"},
+  which runs with an ARM CPU architecture, but it can use Rosetta for AMD binaries with a minor performance penalty.
 - VM will use `virtiofs` to improve the performance of host-mounted directories.
 - Allows you to mount directories in your home directory that you can write to.
 

@@ -28,4 +28,4 @@ For example, here's the CloudFlare Pages project of this website on its first de
 
 ## References
 
-- <https://developers.cloudflare.com/pages/>
+- <https://developers.cloudflare.com/pages/>{:target="_blank"}{:rel="noopener noreferrer"}

@@ -90,4 +90,4 @@ This is almost similar to `nohup` but with the following differences:
 
 ## References
 
-- <https://linuxhandbook.com/jobs-command/>
+- <https://linuxhandbook.com/jobs-command/>{:target="_blank"}{:rel="noopener noreferrer"}
