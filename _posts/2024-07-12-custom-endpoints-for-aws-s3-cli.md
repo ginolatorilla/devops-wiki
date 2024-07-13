@@ -40,8 +40,8 @@ $ aws --endpoint-url http://localhost:9000 s3 ls
 Uploading a file should work, and we can view it with the AWS CLI:
 
 ```shell
-echo hello | aws --endpoint-url http://localhost:9000 s3 cp - s3://mybucket/hello.txt
-aws --endpoint-url http://localhost:9000 s3 ls s3://mybucket
+$ echo hello | aws --endpoint-url http://localhost:9000 s3 cp - s3://mybucket/hello.txt
+$ aws --endpoint-url http://localhost:9000 s3 ls s3://mybucket
 2024-07-12 00:30:20          6 hello.txt
 ```
 
