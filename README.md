@@ -14,4 +14,5 @@ Everything that I know related to DevOps.
 This page uses [Jekyll's](https://jekyllrb.com) default configuration.
 Run the `jekyll serve` command to preview your work and to check if your changes are acceptable.
 
-When you push your changes to the `main` branch, [CloudFlare Pages] will pick them up and deploy them live.
+When you push your changes to the `main` branch, [CloudFlare Pages](https://pages.cloudflare.com) will pick them up and
+deploy them live.
