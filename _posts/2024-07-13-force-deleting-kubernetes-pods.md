@@ -53,8 +53,8 @@ No resources found in default namespace.
 
 ## Disconnect controllers that inject additional containers
 
-Controllers like [Istio](https://istio.io/){:target="_blank"}{:rel="noopener noreferrer"} and
-[HCV Agent Injector](https://developer.hashicorp.com/vault/docs/platform/k8s/injector){:target="_blank"}{:rel="noopener noreferrer"}
+Controllers like {% include external-link.html text="Istio" url="https://istio.io/" %} and
+{% include external-link.html text="HCV Agent Injector" url="https://developer.hashicorp.com/vault/docs/platform/k8s/injector" %}
 can inject sidecars or init containers. It's possible that you can't remove pod finalizers because as you update the pod's
 manifest, the controllers will try to add containers.
 
@@ -89,5 +89,5 @@ spec:
 
 ## References
 
-- <https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/>{:target="_blank"}{:rel="noopener noreferrer"}
-- <https://developer.hashicorp.com/vault/docs/platform/k8s/injector/annotations>{:target="_blank"}{:rel="noopener noreferrer"}
+- {% include external-link.html url="https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/" %}
+- {% include external-link.html url="https://developer.hashicorp.com/vault/docs/platform/k8s/injector/annotations" %}

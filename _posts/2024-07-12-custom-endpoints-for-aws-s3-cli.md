@@ -4,8 +4,8 @@ title: Custom Endpoints for AWS S3 CLI
 tags: aws s3
 ---
 
-You can use the AWS S3 CLI with compatible object storage services like [NooBaa](https://www.noobaa.com){:target="_blank"}{:rel="noopener noreferrer"},
-[Rook](https://rook.io){:target="_blank"}{:rel="noopener noreferrer"}, and [MinIO](https://min.io){:target="_blank"}{:rel="noopener noreferrer"}
+You can use the AWS S3 CLI with compatible object storage services like {% include external-link.html text="NooBaa" url="https://www.noobaa.com" %},
+{% include external-link.html text="Rook" url="https://rook.io" %}, and {% include external-link.html text="MinIO" url="https://min.io" %}
 using the following template for the commands:
 
 ```shell
@@ -20,7 +20,7 @@ To demonstrate, we'll set up MinIO with a container:
 docker run -p 9000:9000 -p 9001:9001 quay.io/minio/minio server /data --console-address ":9001"
 ```
 
-Browse to http://localhost:9001 and log in with `minioadmin:minioadmin`.
+Browse to `http://localhost:9001` and log in with `minioadmin:minioadmin`.
 
 ![Create a bucket](/assets/img/minio-create-bucket.png)
 

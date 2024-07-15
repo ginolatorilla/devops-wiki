@@ -4,13 +4,14 @@ title: Deploy a Static Website to CloudFlare
 tags: web cloudflare
 ---
 
-You can use [CloudFlare](https://cloudflare.com){:target="_blank"}{:rel="noopener noreferrer"} to host a website for free.
-Their free plan lets you use the **pages.dev** domain, which is compact and disassociated with commercial brands compared to **github.io** or **gitlab.io**. The plan will not bill you for any traffic with your static website.
+You can use {% include external-link.html text="CloudFlare" url="https://cloudflare.com" %} to host a website for free.
+Their free plan lets you use the **pages.dev** domain, which is compact and disassociated with commercial brands
+compared to **github.io** or **gitlab.io**. The plan will not bill you for any traffic with your static website.
 
 CloudFlare can pull your website from either GitHub or GitLab.
-You can use plain HTML or a [supported framework](https://developers.cloudflare.com/pages/framework-guides/){:target="_blank"}{:rel="noopener noreferrer"} in your repository.
-This website runs in CloudFlare, uses [Jekyll](https://jekyllrb.com){:target="_blank"}{:rel="noopener noreferrer"} with minimal customisations.
-You can view the source code [here](https://github.com/ginolatorilla/devops-wiki){:target="_blank"}{:rel="noopener noreferrer"}.
+You can use plain HTML or a {% include external-link.html text="supported framework" url="https://developers.cloudflare.com/pages/framework-guides/" %} in your repository.
+This website runs in CloudFlare, uses {% include external-link.html text="Jekyll" url="https://jekyllrb.com" %} with minimal customisations.
+You can view the source code {% include external-link.html text="here" url="https://github.com/ginolatorilla/devops-wiki" %}.
 
 ## Procedure
 
@@ -28,4 +29,4 @@ For example, here's the CloudFlare Pages project of this website on its first de
 
 ## References
 
-- <https://developers.cloudflare.com/pages/>{:target="_blank"}{:rel="noopener noreferrer"}
+- {% include external-link.html url="https://developers.cloudflare.com/pages/" %}

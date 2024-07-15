@@ -4,10 +4,10 @@ title: Run Docker in GitLab Docker Executors
 tags: gitlab docker
 ---
 
-GitLab's CI uses [runners](https://docs.gitlab.com/runner/){:target="_blank"}{:rel="noopener noreferrer"} to "run" jobs.
-A runner is a service GitLab already [provides](https://docs.gitlab.com/ee/ci/runners/index.html){:target="_blank"}{:rel="noopener noreferrer"}, or you can
-host your own. Runners use [executors](https://docs.gitlab.com/runner/#executors){:target="_blank"}{:rel="noopener noreferrer"}, which determine the job's environment.
-The most widely used is the [Docker executor](https://docs.gitlab.com/runner/executors/docker.html){:target="_blank"}{:rel="noopener noreferrer"}, where jobs run
+GitLab's CI uses {% include external-link.html text="runners" url="https://docs.gitlab.com/runner/" %} to "run" jobs.
+A runner is a service GitLab already {% include external-link.html text="provides" url="https://docs.gitlab.com/ee/ci/runners/index.html" %}, or you can
+host your own. Runners use {% include external-link.html text="executors" url="https://docs.gitlab.com/runner/#executors" %}, which determine the job's environment.
+The most widely used is the {% include external-link.html text="Docker executor" url="https://docs.gitlab.com/runner/executors/docker.html" %}, where jobs run
 inside a Docker container.
 
 Running Docker commands inside Docker containers is not a simple task. There are many ways to do it; my solution
@@ -32,7 +32,7 @@ job_that_uses_docker:
     - docker push <repo/image:tag>
 ```
 
-This solution works by running the Docker Engine as a background [`service`](https://docs.gitlab.com/ee/ci/yaml/#services){:target="_blank"}{:rel="noopener noreferrer"}
+This solution works by running the Docker Engine as a background {% include external-link.html text="service" url="https://docs.gitlab.com/ee/ci/yaml/#services" %}
 for the duration of the job. The variable `DOCKER_HOST` ensures that the job can connect to the service, which gets a
 DNS record from the service's `alias` keyword. The variable `DOCKER_TLS_CERTDIR` is set to an empty string to bypass
 TLS certificate verification. It shouldn't be an issue since the service is only used locally and is not listening to
