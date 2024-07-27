@@ -12,7 +12,6 @@ compute units to GitLab or host your runners.
 
 ![GitLab usage quotas](/assets/img/gitlab-usage-quotas.png)
 
-
 ## GitLab runner
 
 You'll read a lot about runners and executors in GitLab's documentation, but rarely you'll encounter an executor

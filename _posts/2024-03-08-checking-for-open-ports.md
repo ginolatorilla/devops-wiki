@@ -51,6 +51,6 @@ $ curl -v localhost:53
 > Host: localhost:53
 > User-Agent: curl/8.4.0
 > Accept: */*
-> 
+>
 ^C
 ```
