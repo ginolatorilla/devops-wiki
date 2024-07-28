@@ -4,7 +4,8 @@ title: Serve a Static Website in AWS S3 with a Custom Domain
 tags: aws aws-s3 dns cloudflare
 ---
 
-You can use AWS S3 to serve a static website, which is a feature according to the {% include external-link.html text="official AWS S3 documentation" url="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html" %}.
+You can use AWS S3 to serve a static website, which is a feature according to the
+{% include external-link.html text="official AWS S3 documentation" url="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html" %}.
 The recommendations here might not be compatible with your business.
 
 ## Problems with AWS recommendations
@@ -38,7 +39,9 @@ and with these settings
 
 Choose a name for the bucket with a suffix to decrease the chances of name collisions.
 
-Your DNS provider should provide you a list of public IPs, like what's in {% include external-link.html text="this page from CloudFlare" url="https://www.cloudflare.com/en-gb/ips/" %}. When crafting the bucket policy, use those public IDs with the sample policy described in the
+Your DNS provider should provide you with a list of public IPs, like what's in
+{% include external-link.html text="this page from CloudFlare" url="https://www.cloudflare.com/en-gb/ips/" %}.
+When crafting the bucket policy, use those public IDs with the sample policy described in the
 {% include external-link.html text="official instructions to restrict access to buckets" url="https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-IP" %}.
 Here's a template policy you can use:
 
@@ -103,8 +106,10 @@ After this, you should be able to view the S3-hosted website securely and with a
 The trick lies with how {% include external-link.html text="AWS parses the host header" url="https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#VirtualHostingSpecifyBucket" %}
 for to get the bucket name and the key (the URI path, which is also the path of an object in the bucket). The host header will take precedence over the hostname in the request, so this rule allows us to use different bucket names from the DNS hostnames. The CloudFlare origin rule provides us with a way to override host headers.
 
-The CloudFlare configuration rule provides TLS coverage from the clients to AWS S3; the communication between CloudFlare and AWS is still in HTTP. To overcome this security issue, the bucket policy limits access from the public to the AWS S3 bucket website HTTP endpoint, and the anonymisation by the hash suffix in the bucket name supplements this.
-
+The CloudFlare configuration rule provides TLS coverage from the clients to AWS S3; the communication between
+CloudFlare and AWS is still in HTTP. To improve security, we use a bucket policy that limits access from the public
+to the AWS S3 bucket website HTTP endpoint.  Making the bucket name anonymous prevents name collision with other
+AWS accounts.
 
 ## References
 

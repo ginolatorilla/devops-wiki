@@ -7,9 +7,9 @@ tags: aws aws-ec2 bash
 An SSH key is all you need to access a remote shell to any EC2 instance. When you launch instances, you attach an
 **EC2 keypair** resource to it, which can already exist, or AWS will ask you to create one.
 
-The security issue here is that if you don't rotate these keys, and if an unauthorised person gets one of those keys, they can
-gain access to your servers. There's also an operational issue: you can permanently lose access to your machines if you
-lose the private key (part of the EC2 keypair).
+The security issue here is that if you don't rotate these keys, and if an unauthorised person gets one of those keys,
+they can gain access to your servers. There's also an operational issue: you can permanently lose access to your
+machines if you lose the private key (part of the EC2 keypair).
 
 To solve these issues, AWS has a command that resembles how the `ssh-copy-id` command behaves: `aws ec2-instance-connect`.
 After a minute, your public SSH key vanishes from the EC2 instance, which is secure.

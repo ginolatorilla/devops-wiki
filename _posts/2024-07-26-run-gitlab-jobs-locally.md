@@ -26,8 +26,9 @@ same context as the runner (dangerous).
 
 ## Install a runner
 
-You will host both the runner and its executors in Docker. There are other {% include external-link.html text="ways" url="https://docs.gitlab.com/runner/install/index.html#binaries" %}
-you can install runners---using Docker is the easiest.
+You will host both the runner and its executors in Docker. There are other
+{% include external-link.html text="ways" url="https://docs.gitlab.com/runner/install/index.html#binaries" %} you can
+install runners---using Docker is the easiest.
 
 Follow these {% include external-link.html text="instructions" url="https://docs.gitlab.com/runner/install/docker.html" %}
 to install the runner. Use _Option 1_ so we can configure the runner outside the container.
@@ -44,7 +45,8 @@ docker run -d --name gitlab-runner --restart always \
 Once the runner is up, you must register it to GitLab to start taking jobs.  Follow these
 {% include external-link.html text="instructions" url="https://docs.gitlab.com/runner/register/index.html" %} to register.
 
-💡 **Note**: We will use the runner authentication method, but feel free to use the deprecated registration token method, especially if you have an older version of GitLab.
+💡 **Note**: We will use the runner authentication method, but feel free to use the deprecated registration token
+method, especially if you have an older version of GitLab.
 
 Go to **Settings > CI/CD > Runners** page in your GitLab project and press the **New Project Runner** button.
 
@@ -86,8 +88,8 @@ You should see the runner on GitLab's settings page.
 
 ## Using the runner
 
-Since we allowed the runner to run untagged jobs in the example, it should be able to pick up jobs in the project's pipeline.
-You can disable instance runners to ensure your runners will only pick up the jobs.
+Since we allowed the runner to run untagged jobs in the example, it should be able to pick up jobs in the project's
+pipeline. You can disable instance runners to ensure your runners will only pick up the jobs.
 
 ![GitLab disable instance runners](/assets/img/gitlab-disable-instance-runners.png)
 

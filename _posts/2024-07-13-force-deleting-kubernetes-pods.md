@@ -5,7 +5,7 @@ tags: kubernetes
 ---
 
 Deleting a Kubernetes resource should be as simple as running `kubectl delete`. There are situations
-like a power outage that could corrupt the cluster, leaving you with stray pods that you can't delete. These pods,
+like a power outage that could corrupt the cluster, leaving you with stray pods you can't delete. These pods,
 if left unattended, will prevent you from draining nodes.
 
 ## Force delete with kubectl
