@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SSH Tunnels
+title: SSH Tunnels
 tags: networking ssh
 ---
 
