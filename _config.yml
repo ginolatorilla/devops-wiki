@@ -6,6 +6,7 @@ baseurl: ""
 url: ""
 author: Gino Latorilla
 github_username: ginolatorilla
+timezone: Asia/Manila
 
 theme: minima
 plugins:
