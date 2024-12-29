@@ -42,7 +42,7 @@ PUB_IP=$(aws ec2 describe-instances --instance-ids $1 --query 'Reservations[*].I
 TMPKEY=$(mktemp -d)
 
 # Create the temporary SSH key without a passphrase.
-ssh-keygen -f $TEMPKEY/id_rsa -N ''
+ssh-keygen -f $TMPKEY/id_rsa -N ''
 aws ec2-instance-connect send-ssh-public-key --instance-id $instance --instance-os-user ec2-user --ssh-public-key "$(cat $TMPKEY/id_rsa.pub)" >/dev/null
 ssh ec2-user@$PUB_IP -i $TMPKEY/id_rsa
 
