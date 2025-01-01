@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optional configuration blocks in Terraform 
+title: Optional Configuration Blocks in Terraform 
 tags: terraform
 ---
 
