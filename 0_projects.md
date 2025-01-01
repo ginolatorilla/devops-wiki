@@ -11,6 +11,13 @@ Here are the things I made that I like to share with the rest of the world.
 I spent plenty of time setting up the file structure whenever I started projects. Because of that, I realised that not
 repeating that initial task would save me time. Here are my project templates based on my work experience.
 
+### C++
+
+This project template is the first of many. I designed it to build C++ binaries with CMake. It also includes helpful
+development tools like **Google Test**, **Address Sanitizers**, and **Clang Tidy**.
+
+See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/cpp-cmake-template/" %} to know more.
+
 ### Python
 
 This project template has a script that sets up a Python project that readily builds into a package compatible with `pip`.
@@ -26,27 +33,24 @@ that work well with **GitLab** and **Terraform Enterprise**. For anything shared
 
 See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/terraform-template/" %} to know more.
 
-### C++
+### Go
 
-This project template is the first of many. I designed it to build C++ binaries with CMake. It also includes helpful
-development tools like **Google Test**, **Address Sanitizers**, and **Clang Tidy**.
+This template is for building command line apps with Go. The project structure follows recommendations from the
+[Unofficial Standard Go Project Layout](https://github.com/golang-standards/project-layout). The following are the
+frameworks and libraries used in this project:
 
-See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/cpp-cmake-template/" %} to know more.
+- **Cobra** for the command line parser
+- **Viper** for configuration
+- **Zap** for structured logging
+
+See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/go-template/" %} to know more.
 
 ### React/Gin web app
 
-I did a small hobby project in 2023 using this tech stack:
+This template is a specialised version of the _Go project template_ for a single-page web application.
 
 - **ReactJS** with **TypeScript** and **TailwindCSS** for the frontend
-- **Gin** with **Golang** for the backend
-- **MongoDB** for storage
-
-Some goodies you'll find in this project template:
-
-- Optimized for **VSCode**: There are background tasks that will watch changes to your files for both frontend and
-  backend components and hot-reload the development server for you.
-- **CORS** in dev mode: I added CORS as a configurable middleware because the frontend and backend servers will run on separate servers.
-- **12-factor app**: This project template bootstraps an app following this software design methodology (at least, I think so).
+- **Gin** for the backend
 
 See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/react-go-template/" %} to know more.
 
@@ -58,7 +62,7 @@ You can also configure the pipelines with CI/CD variables.
 
 See the project's {% include external-link.html text="repo" url="https://gitlab.com/ginolatorilla/gitlab-ci-templates" %} to know more.
 
-### Python
+### GitLab CI for Python
 
 This pipeline template works well with my Python project template. It will run unit tests and style checks, generate release tags,
 and push to a PyPI instance. It will only run jobs in the `test` stage for quicker iteration in merge requests.
@@ -70,7 +74,7 @@ Demos:
 - {% include external-link.html text="Main pipeline with manual tagging" url="https://gitlab.com/ginolatorilla/gitlab-ci-templates-python-example/-/pipelines/1136995865" %}, triggered by a
   {% include external-link.html text="release" url="https://gitlab.com/ginolatorilla/gitlab-ci-templates-python-example/-/releases/v0.0.3" %}
 
-### Docker
+### GitLab CI for Docker
 
 This pipeline template implements what I [posted](/2024/06/16/run-docker-in-gitlab-docker-executor) about running Docker in GitLab.
 The main feature here is that for merge requests, the pipeline builds Docker images, and after merging, it builds and
@@ -81,7 +85,7 @@ Demos:
 - {% include external-link.html text="Merge request pipeline" url="https://gitlab.com/ginolatorilla/gitlab-ci-templates-docker-example/-/pipelines/1077706151" %}
 - {% include external-link.html text="Main pipeline" url="https://gitlab.com/ginolatorilla/gitlab-ci-templates-docker-example/-/pipelines/1077706151" %}
 
-### Terraform
+### GitLab CI for Terraform
 
 GitLab will obsolete their Terraform CI templates, so I kept them and optimised them for my needs. These templates have
 multiple variants for simple Terraform projects to multiple stages or environments.
@@ -99,7 +103,19 @@ As I started improving it, the installer script got bulkier, and it's doing the 
 Because of that reason, I decided to rework my dotfiles with **Ansible**, which now allows me to sync my app configs
 and install the apps themselves. In DevOps terms, my workspace adopts the **GitOps** principle.
 
-See the project's {% include external-link.html text="repo" url="https://gitlab.com/ginolatorilla/dotfiles" %} to know more.
+See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/dotfiles" %} to know more.
+
+## Local platform
+
+There are several vendor implementations of a single-node Kubernetes cluster, such as Docker Desktop, OrbStack, and Rancher Desktop.
+This project is my attempt to write my own (reinvent the wheel?) implementation, tailored to run in macOS M1.
+
+I built this project while learning how to administer my own cluster. The first incarnation of this project is
+{% include external-link.html text="k8s-homenet" url="https://github.com/ginolatorilla/k8s-homenet" %}. I found it
+tedious to maintain a general solution that can deploy either a single or a multinode cluster, hence this project's
+reduced scope.
+
+See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/local-platform" %} to know more.
 
 ## Command-line programs
 
@@ -110,12 +126,10 @@ Some of them are useful for work, and some are for fun.
 During the COVID-19 pandemic, I got bored, so I wrote this program to ~~prevent damaging my winning streak~~ learn
 about parallelism and performant Python coding by finding a solution to a **Wordle** game.
 
-See the project's {% include external-link.html text="repo" url="https://gitlab.com/ginolatorilla/wordlesolver" %} to know more.
+See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/wordlesolver" %} to know more.
 
-### Kubeclean
+### DevOps
 
-**kubeclean** removes config maps in a Kubernetes cluster if no pod references them. _It's still a work in progress_.
+**devops** is a collection of tools that I've used in my career as a DevOps engineer.
 
-This program is also the first one I wrote in **Rust**, which I plan to continue using for my future projects.
-
-See the project's {% include external-link.html text="repo" url="https://gitlab.com/ginolatorilla/kubeclean" %} to know more.
+See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/devops" %} to know more.
