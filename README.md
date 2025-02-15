@@ -6,13 +6,12 @@ Everything that I know related to DevOps.
 
 ## Requirements
 
-- Ruby 3.3
-- Jekyll 4.3.3
+- Hugo 0.138.0
 
 ## Publishing a post
 
-This page uses [Jekyll's](https://jekyllrb.com) default configuration.
-Run the `jekyll serve` command to preview your work and to check if your changes are acceptable.
+This page uses the [Congo](https://jpanther.github.io/congo/) Hugo theme.
+Run the `hugo server` command to preview your work and to check if your changes are acceptable.
 
 When you push your changes to the `main` branch, [CloudFlare Pages](https://pages.cloudflare.com) will pick them up and
 deploy them live.

@@ -1,0 +1,10 @@
+title = "Gino's DevOps Wiki"
+
+[params.author]
+name = "Gino Latorilla"
+image = "img/author.jpg"
+links = [
+  { linkedin = "https://www.linkedin.com/in/ginolatorilla" },
+  { github = "https://github.com/ginolatorilla" },
+  { gitlab = "https://gitlab.com/ginolatorilla" },
+]

@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Gino's DevOps Wiki"
+
+[build]
+[[build.cachebusters]]
+source = 'layouts/.*'
+target = 'css'
