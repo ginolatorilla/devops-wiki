@@ -9,7 +9,8 @@ recentLimit = 3
 [article]
 showReadingTime = false
 showAuthor = false
-showDate = true         # needed by showTaxonomies
+showTableOfContents = true
+showDate = true            # needed by showTaxonomies
 showTaxonomies = true
 
 [list]
