@@ -1,7 +1,7 @@
 ---
 title: Local Kubernetes
+summary: I built my own Kubernetes cluster the hard way.
 ---
-
 There are several vendor implementations of a single-node Kubernetes cluster, such as Docker Desktop, OrbStack, and Rancher Desktop.
 This project is my attempt to write my own (reinvent the wheel?) implementation, tailored to run in macOS M1.
 

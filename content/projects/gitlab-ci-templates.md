@@ -1,5 +1,6 @@
 ---
 title: GitLab CI Templates
+summary: These are reusable pipeline code for your GitLab CI needs.
 ---
 Similar to project templates, I also found myself building **GitLab CI pipelines**. You can link to these templates from any
 GitLab instance that can reach [GitLab.com](https://gitlab.com/) or embedded in projects if otherwise.
