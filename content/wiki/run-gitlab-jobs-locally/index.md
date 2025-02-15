@@ -44,8 +44,10 @@ docker run -d --name gitlab-runner --restart always \
 Once the runner is up, you must register it to GitLab to start taking jobs.
 Follow these [instructions](https://docs.gitlab.com/runner/register/index.html) to register.
 
-💡 **Note**: We will use the runner authentication method, but feel free to use the deprecated registration token
+{{<alert "circle-info">}}
+**Note:** We will use the runner authentication method, but feel free to use the deprecated registration token
 method, especially if you have an older version of GitLab.
+{{</alert>}}
 
 Go to **Settings > CI/CD > Runners** page in your GitLab project and press the **New Project Runner** button.
 

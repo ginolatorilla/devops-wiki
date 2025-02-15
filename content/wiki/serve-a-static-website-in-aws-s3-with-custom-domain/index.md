@@ -45,7 +45,7 @@ When crafting the bucket policy, use those public IDs with the sample policy des
 [official instructions to restrict access to buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-IP).
 Here's a template policy you can use:
 
-```json
+{{<highlight json "hl_lines=16">}}
 {
     "Version": "2012-10-17",
     "Id": "S3PolicyId1",
@@ -61,14 +61,14 @@ Here's a template policy you can use:
             "Condition": {
                 "IpAddress": {
                     "aws:SourceIp": [
-                    "192.0.2.0/24 // ✍️ Replace this with the CIDRs of your DNS provider's public IPs"
+                    "192.0.2.0/24 // 👈 Replace this with the CIDRs of your DNS provider's public IPs"
                     ]
                 }
             }
         }
     ]
 }
-```
+{{</highlight>}}
 
 Configure the index/error documents and the redirects as needed. These tasks are optional.
 

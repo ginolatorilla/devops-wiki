@@ -90,7 +90,7 @@ This conversion happens because of two rules:
 Depending on your provider, the conversion of each element to `string` might not be an issue. But if it is, follow these
 recommendations.
 
-### Do not use collection functions
+### Don't use collection functions
 
 Don't use `tolist`, `tomap`, and `zipmap`. These functions will take in `object` and `tuple` (structural) types,
 which are unaffected by the type conversion issue.
