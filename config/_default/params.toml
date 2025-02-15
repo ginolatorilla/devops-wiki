@@ -22,3 +22,4 @@ groupByYear = false
 showTaxonomies = true
 invertPagination = true
 showDate = true         # needed by showTaxonomies
+showSummary = true
