@@ -1,7 +1,7 @@
 ---
 date: 2024-06-27
 title: Run Docker in macOS Using Lima
-tags: docker macos lima
+tags: [docker, macOS, lima]
 ---
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop/)
