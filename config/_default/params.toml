@@ -5,6 +5,7 @@ enableSearch = true
 [homepage]
 showRecent = true
 recentLimit = 3
+layout = "profile"
 
 [article]
 showReadingTime = false

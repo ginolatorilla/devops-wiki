@@ -26,11 +26,6 @@ pageRef = "tags"
 weight = 20
 
 [[main]]
-name = "About"
-pageRef = "about"
-weight = 40
-
-[[main]]
 identifier = "search"
 weight = 99
 [main.params]
