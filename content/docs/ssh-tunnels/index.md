@@ -9,7 +9,7 @@ Tunneling with SSH can be the answer to these questions:
 - Do you need to access websites in other networks, and you can SSH into one of its hosts?
 - Do you need an alternative route to a server?
 
-![SSH tunnel overview](/assets/img/ssh-tunnel-overview.png)
+![SSH tunnel overview](ssh-tunnel-overview.png)
 
 Let's have a simple example where you can access a host in a private network (e.g., corporate) using a VPN.
 A server---that you don't have access to---hosts a website; any other host in the network can access it.
@@ -30,4 +30,4 @@ This method also works with any TCP server.
 
 ## References
 
-- {% include external-link.html url="https://linuxize.com/post/how-to-setup-ssh-tunneling/" %}
+- <https://linuxize.com/post/how-to-setup-ssh-tunneling/>
