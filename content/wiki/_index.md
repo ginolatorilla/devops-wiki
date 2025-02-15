@@ -1,8 +1,8 @@
 ---
-title: "Documentation"
+title: Wiki
 
 cascade:
   invertPagination: true
-  showSummary: true
+  showSummary: false
   showTaxonomies: true
 ---
