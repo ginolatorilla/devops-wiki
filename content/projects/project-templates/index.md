@@ -10,14 +10,14 @@ repeating that initial task would save me time. Here are my project templates ba
 This project template is the first of many. I designed it to build C++ binaries with CMake. It also includes helpful
 development tools like **Google Test**, **Address Sanitizers**, and **Clang Tidy**.
 
-See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/cpp-cmake-template/" %} to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/cpp-cmake-template/) to know more.
 
 ## Python
 
 This project template has a script that sets up a Python project that readily builds into a package compatible with `pip`.
 It also comes with a virtual environment to supplement your development workflows.
 
-See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/python3-template/" %} to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/python3-template/) to know more.
 
 ## Terraform
 
@@ -25,7 +25,7 @@ The main feature of this project template is it can support multiple environment
 a production and staging environment in the same repo but backed by different Terraform states
 that work well with **GitLab** and **Terraform Enterprise**. For anything shared between environments, there's a local modules directory.
 
-See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/terraform-template/" %} to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/terraform-template/) to know more.
 
 ## Go
 
@@ -37,7 +37,7 @@ frameworks and libraries used in this project:
 - **Viper** for configuration
 - **Zap** for structured logging
 
-See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/go-template/" %} to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/go-template/) to know more.
 
 ## React/Gin web app
 
@@ -46,4 +46,4 @@ This template is a specialised version of the _Go project template_ for a single
 - **ReactJS** with **TypeScript** and **TailwindCSS** for the frontend
 - **Gin** for the backend
 
-See the project's {% include external-link.html text="repo" url="https://github.com/ginolatorilla/react-go-template/" %} to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/react-go-template/) to know more.

@@ -5,7 +5,7 @@ Similar to project templates, I also found myself building **GitLab CI pipelines
 GitLab instance that can reach [GitLab.com](https://gitlab.com/) or embedded in projects if otherwise.
 You can also configure the pipelines with CI/CD variables.
 
-See the project's [repo](https://gitlab.com/ginolatorilla/gitlab-ci-templates) to know more.
+See the project's [{{< icon "gitlab" >}} repo](https://gitlab.com/ginolatorilla/gitlab-ci-templates) to know more.
 
 ## GitLab CI for Python
 

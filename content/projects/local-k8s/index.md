@@ -9,4 +9,4 @@ I built this project while learning how to administer my own cluster. The first 
 [k8s-homenet](https://github.com/ginolatorilla/k8s-homenet). I found it tedious to maintain a general solution that can
 deploy either a single or a multinode cluster, hence this project's reduced scope.
 
-See the project's [repo](https://github.com/ginolatorilla/local-platform) to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/local-platform) to know more.

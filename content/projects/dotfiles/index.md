@@ -7,4 +7,4 @@ As I started improving it, the installer script got bulkier, and it's doing the 
 Because of that reason, I decided to rework my dotfiles with **Ansible**, which now allows me to sync my app configs
 and install the apps themselves. In DevOps terms, my workspace adopts the **GitOps** principle.
 
-See the project's [repo](https://github.com/ginolatorilla/dotfiles) to know more.
+See the project's [{{< icon "github" >}} repo](https://github.com/ginolatorilla/dotfiles) to know more.
