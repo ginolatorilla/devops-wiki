@@ -3,6 +3,6 @@ title: "Documentation"
 
 cascade:
   invertPagination: true
-  showSummary: false
+  showSummary: true
   showTaxonomies: true
 ---
