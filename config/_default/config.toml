@@ -4,3 +4,4 @@
 
 baseURL = "https://devops-wiki.pages.dev/"
 languageCode = "en"
+summaryLength = 20

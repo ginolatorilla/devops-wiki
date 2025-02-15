@@ -1,3 +1,17 @@
 colorScheme = "slate"
 enableCodeCopy = true
 enableSearch = true
+
+[homepage]
+showRecent = true
+recentLimit = 10
+
+[article]
+showReadingTime = false
+showAuthor = false
+showTableOfContents = true
+showDate = true            # needed by showTaxonomies
+showTaxonomies = true
+
+[list]
+groupByYear = false
