@@ -5,3 +5,7 @@
 baseURL = "https://devops-wiki.pages.dev/"
 languageCode = "en"
 summaryLength = 20
+
+
+[outputs]
+home = ["HTML", "JSON"]
