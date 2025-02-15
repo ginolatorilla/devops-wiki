@@ -1,5 +1,6 @@
 ---
 title: Dotfiles
+summary: All my workstation's configuration is _GitOps_.
 ---
 Run a quick search of the word "dotfiles" in GitHub, and you'll see many personal projects that use the same name.
 I wrote my first version inspired from the ["dotfiles of \"Cowboy\" Ben Alman"](https://github.com/cowboy/dotfiles).

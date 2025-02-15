@@ -11,7 +11,7 @@ YAML is a "human-friendly" language; spaces are an excellent tool for readabilit
 
 ## Problem
 
-```yaml
+{{<highlight yaml "hl_lines=3 7">}}
 apiVersion: v1
 kind: Pod
                                         # 👈 Blank lines before the metadata
@@ -28,7 +28,7 @@ spec:
           name: config
         - mountPath: /etc/keepalived/
           name: check
-```
+{{</highlight>}}
 
 Consider the excerpt for a Kubernetes pod manifest above. The two blank lines separate the root-level blocks
 (`metadata` and `spec`), making them easier to read. For example, you need to edit some keys as part of an automation.

@@ -1,7 +1,7 @@
 ---
 title: Project Templates
+summary: Start a new project immediately.
 ---
-
 I spent plenty of time setting up the file structure whenever I started projects. Because of that, I realised that not
 repeating that initial task would save me time. Here are my project templates based on my work experience.
 

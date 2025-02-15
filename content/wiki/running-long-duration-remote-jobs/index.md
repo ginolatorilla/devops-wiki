@@ -6,10 +6,11 @@ tags: [ssh]
 
 Here are ways to run long-duration jobs in an SSH session.
 
-## ️⚠️ Caveat emptor
-
-Manual task management in the shell, if not done correctly, may cause system instability, especially if you lose track
-of high-load jobs. Consider using better solutions, such as automation software, or parallel processing.
+{{<alert>}}
+**Caveat emptor:** Manual task management in the shell—if not done correctly—may cause system instability,
+especially if you lose track of high-load jobs. Consider using better solutions, such as automation software or
+parallel processing.
+{{</alert>}}
 
 ## tmux
 
@@ -39,9 +40,11 @@ $ jobs
 [2]+  Running               <some-other-job>
 ```
 
-💡 **Note**: `tmux` is the only example in this entire article that allows you to reattach to your job if
-you leave your session. This is also useful if you find yourself in a situation where your connection to a remote
-server is unreliable, or have a critical workload that cannot be interrupted.
+{{<alert "circle-info">}}
+**Note:** `tmux` is the only example in this entire article that allows you to reattach to your job if you leave
+your session. This is also useful if you find yourself in a situation where your connection to a remote server is
+unreliable, or have a critical workload that cannot be interrupted.
+{{</alert>}}
 
 ## nohup
 

@@ -2,6 +2,9 @@ colorScheme = "slate"
 enableCodeCopy = true
 enableSearch = true
 
+[footer]
+showAppearanceSwitcher = true
+
 [homepage]
 showRecent = true
 recentLimit = 3
@@ -16,3 +19,7 @@ showTaxonomies = true
 
 [list]
 groupByYear = false
+showTaxonomies = true
+invertPagination = true
+showDate = true         # needed by showTaxonomies
+showSummary = true

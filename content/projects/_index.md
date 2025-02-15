@@ -2,8 +2,7 @@
 title: Projects
 
 cascade:
-  invertPagination: true
   showSummary: true
-  showTaxonomies: true
+  showTaxonomies: false
   showDate: false
 ---

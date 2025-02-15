@@ -4,8 +4,9 @@ title: Force Deleting Kubernetes Pods
 tags: [kubernetes]
 ---
 
-TODO
-> ⭐️ See this related [post]({% post_url 2025-01-01-deleting-a-namespace-gracefully %}).
+{{<alert "circle-info">}}
+See this related [post](/wiki/deleting-a-namespace-gracefully/).
+{{</alert>}}
 
 Deleting a Kubernetes resource should be as simple as running `kubectl delete`. There are situations
 like a power outage that could corrupt the cluster, leaving you with stray pods you can't delete. These pods,
@@ -19,7 +20,7 @@ Most of the time, if you call `kubectl delete --force --grace-period=0`, it will
 
 Finalizers will prevent you from deleting resources. For example, consider this pod:
 
-```yaml
+{{<highlight yaml "hl_lines=6">}}
 apiVersion: v1
 kind: Pod
 metadata:
@@ -33,7 +34,7 @@ metadata:
   uid: eb28b021-7a59-4ad5-8158-b74ffe84c6e3
 spec:
   # ...
-```
+{{</highlight>}}
 
 Deleting that pod won't have any effect, even if we force it.
 
@@ -69,7 +70,7 @@ It would help to make the injecting controller _ignore_ the pod you want to dele
 this manifest that uses HCV Agent Injector annotations. You must remove them and the finalizer, which you can
 quickly do with `kubectl edit`.
 
-```shell
+{{<highlight shell "hl_lines=1 8 10">}}
 $ export EDITOR=vim                                     # 👈 Change this to your preference.
 $ kubectl edit -n default pod busybox-28680838-qrkwb
 apiVersion: v1
@@ -87,7 +88,7 @@ metadata:
   uid: eb28b021-7a59-4ad5-8158-b74ffe84c6e3
 spec:
   # ...
-```
+{{</highlight>}}
 
 ## References
 

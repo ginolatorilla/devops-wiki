@@ -1,7 +1,12 @@
 title = "Gino's DevOps Wiki"
 
+[params]
+description = "Gino's DevOps Wiki is everything the author knows about DevOps."
+mainSection = ["wiki"]
+
 [params.author]
 name = "Gino Latorilla"
+headline = "Coding professionally since 2011"
 image = "img/author.jpg"
 links = [
   { linkedin = "https://www.linkedin.com/in/ginolatorilla" },
