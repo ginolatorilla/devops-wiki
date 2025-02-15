@@ -11,6 +11,11 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+name = "Docs"
+pageRef = "docs"
+weight = 10
+
+[[main]]
 name = "Posts"
 pageRef = "posts"
 weight = 10
@@ -19,6 +24,13 @@ weight = 10
 name = "Tags"
 pageRef = "tags"
 weight = 10
+
+[[main]]
+identifier = "search"
+weight = 99
+[main.params]
+action = "search"
+icon = "search"
 
 [[main]]
 name = "GitHub"

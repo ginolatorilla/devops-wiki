@@ -26,4 +26,4 @@ This is a demo site built entirely using Congo. It also contains a complete set 
 
 {{< figure src="festivities.svg" class="m-auto mt-6 max-w-prose" >}}
 
-Explore the [sample pages]({{< ref "samples" >}}) to get a feel for what Congo can do. If you like what you see, check out the project on [Github](https://github.com/jpanther/congo) or read the [Installation guide]({{< ref "docs/installation" >}}) to get started.
+Explore the [sample pages]({{< ref "docs" >}}) to get a feel for what Congo can do. If you like what you see, check out the project on [Github](https://github.com/jpanther/congo) or read the [Installation guide]({{< ref "docs" >}}) to get started.

@@ -1,7 +1,7 @@
 ---
-layout: post
+date: 2024-03-07
 title: SSH Tunnels
-tags: networking ssh
+tags: [networking, ssh]
 ---
 
 Tunneling with SSH can be the answer to these questions:
